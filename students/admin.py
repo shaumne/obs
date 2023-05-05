@@ -3,4 +3,9 @@ from .models.students import Students
 
 # Register your models here.
 
-admin.site.register(Students)
+
+class MyAdmin(admin.ModelAdmin):
+        list_display = ('full_name', 'email')
+        
+
+admin.site.register(Students, MyAdmin)

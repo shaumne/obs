@@ -1,0 +1,24 @@
+from django.contrib import admin
+from engineering_School.models.introduction_to_aerospace_and_design import Introduction_To_Aerospace_And_Design
+from engineering_School.models.digital_electronics import Digital_Electronics
+from engineering_School.models.introduction_to_biological_engineering import Introduction_To_Biological_Engineering
+from engineering_School.models.introduction_to_computer_science_and_programming import Introduction_To_Computer_Science_And_Programming
+from engineering_School.models.introduction_to_eecs_via_communication_networks import Introduction_To_Eecs_Via_Communication_Networks
+from engineering_School.models.introduction_to_robotics import Introduction_To_Robotics
+from engineering_School.models.introduction_to_solid_state_chemistry import Introduction_To_Solid_State_Chemistry
+from engineering_School.models.materials_science_and_engineering import Materials_Science_And_Engineering
+from engineering_School.models.mechanical_engineering_design import Mechanical_Engineering_Design
+
+
+# Register your models here.
+admin.site.register([
+    Digital_Electronics,
+    Introduction_To_Aerospace_And_Design,
+    Introduction_To_Biological_Engineering,
+    Introduction_To_Eecs_Via_Communication_Networks,
+    Introduction_To_Computer_Science_And_Programming,
+    Introduction_To_Robotics,
+    Introduction_To_Solid_State_Chemistry,
+    Materials_Science_And_Engineering,
+    Mechanical_Engineering_Design
+])
